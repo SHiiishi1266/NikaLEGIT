@@ -1,7 +1,7 @@
 // Game Version: v.3.0.78.32
 #pragma once
 constexpr long OFF_REGION = 0x140000000;    //[Static]->Region
-constexpr long OFF_LEVEL = 0x176d639;       //[Miscellaneous]->LevelName
+constexpr long OFF_LEVEL = 0x17ec544;       //[Miscellaneous]->LevelName
 constexpr long OFF_LOCAL_PLAYER = 0x23e91f8;//[Miscellaneous]->LocalPlayer
 constexpr long OFF_ENTITY_LIST = 0x1f15f88; //[Miscellaneous]->cl_entitylist
 constexpr long OFF_GLOBAL_VARS = 0x17ebf90; //[Miscellaneous]->GlobalVars
