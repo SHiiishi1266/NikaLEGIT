@@ -1,4 +1,4 @@
-// Game Version: v.3.0.78.32
+// Game Version: v 3.0.79.44
 #pragma once
 constexpr long OFF_REGION = 0x140000000;    //[Static]->Region
 constexpr long OFF_LEVEL = 0x17ec544;       //[Miscellaneous]->LevelName
@@ -47,7 +47,7 @@ constexpr long OFF_YAW = 0x223c - 0x8;;      //[DataMap.C_Player]=>m_currentFram
 constexpr long OFF_NAMEINDEX = 0x38;         //[RecvTable.DT_BaseEntity]
 constexpr long OFF_XPLEVEL = 0x3724;         //m_xp
 constexpr long OFF_SQUAD_ID = 0x0344;        //m_squadID
-constexpr long OFF_GAMEMODE = 0x02421110;    //mp_gamemode
+constexpr long OFF_GAMEMODE = 0x02421250;    //mp_gamemode
 constexpr long OFF_SPECTATOR_LIST = 0x1f17fa8; //IDA signtature -> [48 8B 0D ? ? ? ? 48 85 C9 74 ? 48 8B 01 FF ? ? 48 85 C0 74 ? 48 63 4E 38]
 constexpr long OFF_SPECTATOR_LIST_ARRAY = 0x974; 
 
@@ -67,6 +67,19 @@ constexpr long OFF_PROJECTILESPEED = 0x1EC4; //CWeaponX!m_flProjectileSpeed //[W
 constexpr long HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c; //[DT_HighlightSettings].?
 constexpr long OFF_GLOW_FIX = 0x268;
-constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29c; //[DT_HighlightSettings].m_highlightServerActiveStates
+constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C; //[DT_HighlightSettings].m_highlightServerActiveStates
 constexpr long OFF_GLOW_HIGHLIGHTS = 0xb13c6a0;
 constexpr long OFF_GLOW_ENABLE = 0x28c;
+
+
+// TS
+constexpr long OFF_WALL_RUN_START_TIME = 0x3614; // [RecvTable.DT_LocalPlayerExclusive]->m_wallRunStartTime
+constexpr long OFF_WALL_RUN_CLEAR_TIME = 0x3618; // [RecvTable.DT_LocalPlayerExclusive]->m_wallRunClearTime
+constexpr long OFF_IN_BACKWARD = 0x0769b5d0; // [Buttons]->in_backward
+constexpr long OFF_IN_FORWARD = 0x0769b5a8; // [Buttons]->in_forward
+constexpr long OFF_SKY_DIVE_STATUS = 0x4724; // [DataMap.C_Player]->m_skydiveState
+constexpr long OFF_DUCK_STATUS = 0x2a60; // [DataMap.C_Player]->m_duckState
+constexpr long OFF_CENTITY_FLAGS = 0x00c8; // [DataMap.C_Player]->m_fFlags
+
+constexpr long OFF_GRAPPLE = 0x2cc0; //[RecvTable.DT_Player].m_grapple
+constexpr long OFF_GRAPPLE_ATTACHED = 0x2d50; //m_grappleAttached
