@@ -3,7 +3,7 @@
 constexpr long OFF_REGION = 0x140000000;    //[Static]->Region
 constexpr long OFF_LEVEL = 0x17ec544;       //[Miscellaneous]->LevelName
 constexpr long OFF_LOCAL_PLAYER = 0x2429238;//[Miscellaneous]->LocalPlayer
-constexpr long OFF_ENTITY_LIST = 0x1f55fb8; //[Miscellaneous]->cl_entitylist
+constexpr long OFF_ENTITY_LIST = 0x1F55FB8; //[Miscellaneous]->cl_entitylist
 constexpr long OFF_GLOBAL_VARS = 0x17ec040; //[Miscellaneous]->GlobalVars
 constexpr long OFF_NAMELIST = 0xd388450;    //[Miscellaneous]->NameList
 
@@ -19,8 +19,8 @@ constexpr long OFFSET_WALL_RUN_START_TIME = 0x3614; //[RecvTable.DT_LocalPlayerE
 constexpr long OFFSET_WALL_RUN_CLEAR_TIME = 0x3618; //RecvTable.DT_LocalPlayerExclusive]->m_wallRunClearTime
 
 // Player
-constexpr long OFF_VIEW_MATRIX = 0x11a350;   //[RecvTable.DT_Player]->ViewMatrix
-constexpr long OFF_VIEW_RENDER = 0x76dd0d8;  //[RecvTable.DT_Player]->ViewRender
+constexpr long OFF_VIEW_MATRIX = 0x11A350;   //[RecvTable.DT_Player]->ViewMatrix
+constexpr long OFF_VIEW_RENDER = 0x76DD0D8;  //[RecvTable.DT_Player]->ViewRender
 constexpr long OFF_VIEW_MODELS = 0x2d98;     //[RecvTable.DT_Player]->m_hViewModels
 constexpr long OFF_ZOOMING = 0x1be1;         //[RecvTable.DT_Player]->m_bZooming
 constexpr long OFF_LOCAL_ORIGIN = 0x017c;    //[DataMap.CBaseViewModel]->m_vecAbsOrigin
