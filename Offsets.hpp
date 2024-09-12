@@ -5,7 +5,7 @@ constexpr long OFF_LEVEL = 0x182c554;       //[Miscellaneous]->LevelName
 constexpr long OFF_LOCAL_PLAYER = 0x2429238;//[Miscellaneous]->LocalPlayer
 constexpr long OFF_ENTITY_LIST = 0x1f55fb8; //[Miscellaneous]->cl_entitylist
 constexpr long OFF_GLOBAL_VARS = 0x182c050; //[Miscellaneous]->GlobalVars
-constexpr long OFF_NAMELIST = 0xd388450;    //[Miscellaneous]->NameList
+constexpr long OFF_NAMELIST = 0xd3cabd0;    //[Miscellaneous]->NameList
 
 // Buttons
 constexpr long OFF_IN_ATTACK = 0x0769b658;  //[Buttons]->in_attack
@@ -20,7 +20,7 @@ constexpr long OFFSET_WALL_RUN_CLEAR_TIME = 0x3618; //RecvTable.DT_LocalPlayerEx
 
 // Player
 constexpr long OFF_VIEW_MATRIX = 0x11a350;   //[RecvTable.DT_Player]->ViewMatrix
-constexpr long OFF_VIEW_RENDER = 0x76dd0d8;  //[RecvTable.DT_Player]->ViewRender
+constexpr long OFF_VIEW_RENDER = 0x76ddcd8;  //[RecvTable.DT_Player]->ViewRender
 constexpr long OFF_VIEW_MODELS = 0x2d98;     //[RecvTable.DT_Player]->m_hViewModels
 constexpr long OFF_ZOOMING = 0x1be1;         //[RecvTable.DT_Player]->m_bZooming
 constexpr long OFF_LOCAL_ORIGIN = 0x017c;    //[DataMap.CBaseViewModel]->m_vecAbsOrigin
@@ -34,7 +34,7 @@ constexpr long OFF_NAME = 0x0481;            //[RecvTable.DT_BaseEntity]->m_iNam
 constexpr long OFF_SIGNIFIER_NAME = 0x0478;  //[RecvTable.DT_BaseEntity]->m_iSignifierName
 constexpr long OFF_LIFE_STATE = 0x0690;      //[RecvTable.DT_Player]->m_lifeState
 constexpr long OFF_BLEEDOUT_STATE = 0x2760;  //[RecvTable.DT_Player]->m_bleedoutState
-constexpr long OFF_LAST_VISIBLE_TIME = 0x199e + 0x2 ; //[RecvTable.DT_BaseCombatCharacter]->CPlayer!lastVisibleTime // m_hudInfo_visibilityTestAlwaysPasses + 0x2
+constexpr long OFF_LAST_VISIBLE_TIME = 0x19a0 + 0x2 ; //[RecvTable.DT_BaseCombatCharacter]->CPlayer!lastVisibleTime // m_hudInfo_visibilityTestAlwaysPasses + 0x2
 constexpr long OFF_LAST_AIMEDAT_TIME = OFF_LAST_VISIBLE_TIME + 0x8; //[RecvTable.DT_BaseCombatCharacter]->OFF_LAST_VISIBLE_TIME + 0x8 // m_hudInfo_visibilityTestAlwaysPasses + 0x2 + 0x8
 constexpr long OFF_VIEW_ANGLES = 0x2534 - 0x14; //[DataMap.C_Player]->m_ammoPoolCapacity - 0x14
 constexpr long OFF_PUNCH_ANGLES = 0x2438;    //[DataMap.C_Player]->m_currentFrameLocalPlayer.m_vecPunchWeapon_Angle
@@ -68,7 +68,7 @@ constexpr long HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c; //[DT_HighlightSettings].?
 constexpr long OFF_GLOW_FIX = 0x268;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C; //[DT_HighlightSettings].m_highlightServerActiveStates
-constexpr long OFF_GLOW_HIGHLIGHTS = 0xb17e220;
+constexpr long OFF_GLOW_HIGHLIGHTS = 0xb17ee20;
 constexpr long OFF_GLOW_ENABLE = 0x28c;
 
 
