@@ -8,9 +8,9 @@ constexpr long OFF_GLOBAL_VARS = 0x182c050; //[Miscellaneous]->GlobalVars
 constexpr long OFF_NAMELIST = 0xd3c9fd0;    //[Miscellaneous]->NameList
 
 // Buttons
-constexpr long OFF_IN_ATTACK = 0x076dd1d8;  //[Buttons]->in_attack
-constexpr long OFF_IN_JUMP = 0x076dd2e0;    //[Buttons]->in_jump
-constexpr long OFF_IN_DUCK = 0x076dd3e8;    //[Buttons]->in_duck
+constexpr long OFF_IN_ATTACK = 0x0769b658;  //[Buttons]->in_attack
+constexpr long OFF_IN_JUMP = 0x0769b778;    //[Buttons]->in_jump
+constexpr long OFF_IN_DUCK = 0x0769b868;    //[Buttons]->in_duck
 constexpr long OFFSET_IN_FORWARD = 0x076dd128; //[Buttons]->in_forward
 constexpr long OFFSET_TRAVERSAL_START_TIME = 0x2b70; //[RecvTable.DT_LocalPlayerExclusive]->m_traversalStartTime
 constexpr long OFFSET_TRAVERSAL_PROGRESS = 0x2b6c; //[RecvTable.DT_LocalPlayerExclusive]->m_traversalProgress
