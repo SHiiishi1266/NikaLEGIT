@@ -1,4 +1,4 @@
-// Game Version: v 3.0.79.51
+// Game Version: v3.0.79.51
 #pragma once
 constexpr long OFF_REGION = 0x140000000;    //[Static]->Region
 constexpr long OFF_LEVEL = 0x182c554;       //[Miscellaneous]->LevelName
@@ -11,7 +11,7 @@ constexpr long OFF_NAMELIST = 0xd3c9fd0;    //[Miscellaneous]->NameList
 constexpr long OFF_IN_ATTACK = 0x0769b658;  //[Buttons]->in_attack
 constexpr long OFF_IN_JUMP = 0x0769b778;    //[Buttons]->in_jump
 constexpr long OFF_IN_DUCK = 0x0769b868;    //[Buttons]->in_duck
-constexpr long OFFSET_IN_FORWARD = 0x076dd128; //[Buttons]->in_forward
+constexpr long OFFSET_IN_FORWARD = 0x0769b5a8; //[Buttons]->in_forward
 constexpr long OFFSET_TRAVERSAL_START_TIME = 0x2b70; //[RecvTable.DT_LocalPlayerExclusive]->m_traversalStartTime
 constexpr long OFFSET_TRAVERSAL_PROGRESS = 0x2b6c; //[RecvTable.DT_LocalPlayerExclusive]->m_traversalProgress
 constexpr long OFFSET_TRAVERSAL_RELEASE_TIME = 0x2b78; //[RecvTable.DT_LocalPlayerExclusive]->m_traversalReleaseTime
@@ -34,7 +34,7 @@ constexpr long OFF_NAME = 0x0481;            //[RecvTable.DT_BaseEntity]->m_iNam
 constexpr long OFF_SIGNIFIER_NAME = 0x0478;  //[RecvTable.DT_BaseEntity]->m_iSignifierName
 constexpr long OFF_LIFE_STATE = 0x0690;      //[RecvTable.DT_Player]->m_lifeState
 constexpr long OFF_BLEEDOUT_STATE = 0x2760;  //[RecvTable.DT_Player]->m_bleedoutState
-constexpr long OFF_LAST_VISIBLE_TIME = 0x19a0 + 0x2 ; //[RecvTable.DT_BaseCombatCharacter]->CPlayer!lastVisibleTime // m_hudInfo_visibilityTestAlwaysPasses + 0x2
+constexpr long OFF_LAST_VISIBLE_TIME = 0x199e + 0x2 ; //[RecvTable.DT_BaseCombatCharacter]->CPlayer!lastVisibleTime // m_hudInfo_visibilityTestAlwaysPasses + 0x2
 constexpr long OFF_LAST_AIMEDAT_TIME = OFF_LAST_VISIBLE_TIME + 0x8; //[RecvTable.DT_BaseCombatCharacter]->OFF_LAST_VISIBLE_TIME + 0x8 // m_hudInfo_visibilityTestAlwaysPasses + 0x2 + 0x8
 constexpr long OFF_VIEW_ANGLES = 0x2534 - 0x14; //[DataMap.C_Player]->m_ammoPoolCapacity - 0x14
 constexpr long OFF_PUNCH_ANGLES = 0x2438;    //[DataMap.C_Player]->m_currentFrameLocalPlayer.m_vecPunchWeapon_Angle
@@ -48,8 +48,8 @@ constexpr long OFF_NAMEINDEX = 0x38;         //[RecvTable.DT_BaseEntity]
 constexpr long OFF_XPLEVEL = 0x3724;         //m_xp
 constexpr long OFF_SQUAD_ID = 0x0344;        //m_squadID
 constexpr long OFF_GAMEMODE = 0x02461290;    //mp_gamemode
-constexpr long OFF_SPECTATOR_LIST = 0x022f8c60; //IDA signtature -> [48 8B 0D ? ? ? ? 48 85 C9 74 ? 48 8B 01 FF ? ? 48 85 C0 74 ? 48 63 4E 38]
-constexpr long OFF_SPECTATOR_LIST_ARRAY = 0x97c; 
+constexpr long OFF_SPECTATOR_LIST = 0x1F57FD8; //IDA signtature -> [48 8B 0D ? ? ? ? 48 85 C9 74 ? 48 8B 01 FF ? ? 48 85 C0 74 ? 48 63 4E 38]
+constexpr long OFF_SPECTATOR_LIST_ARRAY = 0x974; 
 
 // Weapon
 constexpr long OFF_WEAPON_HANDLE = 0x1944;   //[RecvTable.DT_BaseCombatCharacter]->m_latestPrimaryWeapons
@@ -60,26 +60,13 @@ constexpr long OFF_SKIN = 0x0d68;            //[RecvTable.DT_BaseAnimating]->m_n
 constexpr long OFF_WEAPON_DISCARDED = 0x15a9;//[RecvTable.DT_WeaponX]->m_discarded
 constexpr long OFFSET_TIME_BASE = 0x2088;    //[RecvTable.DT_Player]->m_currentFramePlayer.timeBase
 
-constexpr long OFF_PROJECTILESCALE = 0x1ec4 + 0x8; //CWeaponX!m_flProjectileScale //[WeaponSettings]->projectile_gravity_scale + [WeaponSettingsMeta].base
-constexpr long OFF_PROJECTILESPEED = 0x1ec4; //CWeaponX!m_flProjectileSpeed //[WeaponSettings]->projectile_launch_speed + [WeaponSettingsMeta].base
+constexpr long OFF_PROJECTILESCALE = 0x1EC4 + 0x8; //CWeaponX!m_flProjectileScale //[WeaponSettings]->projectile_gravity_scale + [WeaponSettingsMeta].base
+constexpr long OFF_PROJECTILESPEED = 0x1EC4; //CWeaponX!m_flProjectileSpeed //[WeaponSettings]->projectile_launch_speed + [WeaponSettingsMeta].base
 
 // Glow
 constexpr long HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c; //[DT_HighlightSettings].?
-constexpr long OFF_GLOW_FIX = 0x278;
+constexpr long OFF_GLOW_FIX = 0x268;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C; //[DT_HighlightSettings].m_highlightServerActiveStates
 constexpr long OFF_GLOW_HIGHLIGHTS = 0xb17e220;
-constexpr long OFF_GLOW_ENABLE = 0x26c;
-
-
-// TS
-constexpr long OFF_WALL_RUN_START_TIME = 0x3614; // [RecvTable.DT_LocalPlayerExclusive]->m_wallRunStartTime
-constexpr long OFF_WALL_RUN_CLEAR_TIME = 0x3618; // [RecvTable.DT_LocalPlayerExclusive]->m_wallRunClearTime
-constexpr long OFF_IN_BACKWARD = 0x0769b5d0; // [Buttons]->in_backward
-constexpr long OFF_IN_FORWARD = 0x076dd128; // [Buttons]->in_forward
-constexpr long OFF_SKY_DIVE_STATUS = 0x4724; // [DataMap.C_Player]->m_skydiveState
-constexpr long OFF_DUCK_STATUS = 0x2a60; // [DataMap.C_Player]->m_duckState
-constexpr long OFF_CENTITY_FLAGS = 0x00c8; // [DataMap.C_Player]->m_fFlags
-
-constexpr long OFF_GRAPPLE = 0x2cc0; //[RecvTable.DT_Player].m_grapple
-constexpr long OFF_GRAPPLE_ATTACHED = 0x2d50; //m_grappleAttached
+constexpr long OFF_GLOW_ENABLE = 0x28c;
